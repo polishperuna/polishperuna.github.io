@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Candle World - Natural Scented Candles</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <style>
+  body {
+    font: 400 15px/1.8 Montserrat, sans-serif;
+    color: #777;
+  }
+  
+  html {
+  scroll-behavior: smooth;
+}
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 5px;      
+    font-size: 20px;
+    color: #111;
+
+  }
+  
+  h5  {
+  margin: 10px 0 30px 0;
+    letter-spacing: 5px;      
+    font-size: 25px;
+    color: #777;
+  }
+  
+  .container {
+    padding: 60px 100px;
+  }
+  
+  .intro {
+  font-size: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+}
+  
+  .wax {
+    border: 8px solid transparent;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 90%;
+    opacity: 0.8;
+  }
+  .wax:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+     
+    width: 100%; /* Set width to 100% */
+	margin: auto;
+  }
+ 
+  .bg-1 {
+    background: #2d2d30;
+    color: #777;
+  }
+  .bg-1 h3 {color: #777;}
+  .bg-1 p {font-size: 16px;}
+  
+  .bg-2 {
+    background: #fff;
+    color: #777;}
+  .bg-2 p {font-size: 12px;}
+  .bg-2 h2 {font-size: 16px;}
+  
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 5px 5px;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  
+     
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+	padding: 20px;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+
+  footer {
+    background-color: #111;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+	}
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="img/logo1.png" alt="Candle World logo" width="200" height="100"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#aboutus">ABOUT</a></li>
+        <li><a href="#offer">OFFER</a></li>
+		    <li><a href="#store">STORE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+          
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/candlemain1.jpg" alt="Three candles on the table" width="1200" height="700">
+        
+      </div>
+
+      <div class="item">
+        <img src="img/candlemain2.jpg" alt="Decorative candle with vase" width="1200" height="700">
+          
+      </div>
+    
+      <div class="item">
+        <img src="img/candlemain3.jpg" alt="Candle decor" width="1200" height="700">
+          
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (About us Section) -->
+<div id="aboutus" class="container text-center">
+  <img src="img/candlelogo.png" alt="candle logo" width="350" height="155">
+  <div class="intro">
+  <p>About us</p></div>
+  <p>At Candle World, we are passionate about the art of candle making. Each of our creations is crafted with care, using sustainable production methods and natural ingredients to bring warmth and light into your life.
+
+We take pride in using only the finest natural waxes—coconut wax, beeswax, and soy wax—ensuring that our candles are eco-friendly and clean-burning. With a vast range of thoughtfully curated scents, there’s a fragrance for every mood, moment, and need.
+
+Discover the perfect blend of sustainability, elegance, and comfort with Candle World. Illuminate your space with candles that truly make a difference.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Soy Wax</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="img/soy.jpg" class="img-circle wax" alt="soy wax" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Vegan-friendly</p>
+        <p>Clean-burning</p>
+        <p>Derived from renewable soybeans</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Coconut Wax</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="img/coconut.jpg" class="img-circle wax" alt="open coconut" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Creamy texture</p>
+        <p>Excellent fragrance throw</p>
+		<p>Made from hydrogenated coconut oil</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>BeesWax</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="img/bees.jpg" class="img-circle wax" alt="bees in beehive" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Long-lasting</p>
+        <p>Sweet honey-like aroma</p>
+		<p>Naturally produced by bees</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (OFFER Section) -->
+<div id="offer" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">OUR OFFER</h3>
+    <p class="text-center">Explore our diverse range of scents, thoughtfully crafted to suit every preference. From delicate florals and elegant, perfume-inspired aromas to sweet, comforting blends and nature-inspired fragrances. Candle World has something for everyone. Let your senses guide you to the perfect candle for any mood or occasion.</p>
+    <br><br>
+    <h5 class="text-center">TRENDING NOW:</h5>
+	    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+        <a href="#store"><img src="img/christmas.jpg" alt="Christmas Candle" width="400" height="300"></a>
+          <p><strong>Christmas Scents</strong></p>
+          
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="#store"><img src="img/autumn.jpg" alt="Marshmallow Cocoa" width="400" height="300"></a>
+          <p><strong>Autumn Scents</strong></p>
+          
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="#store"><img src="img/sweet.jpg" alt="Cherry Pie" width="400" height="300"></a>
+          <p><strong>Sweet Scents</strong></p>
+          
+        </div>
+      </div>
+    </div>
+	<h5 class="text-center">CLASSICS:</h5>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="#store"><img src="img/floral.jpg" alt="Blooming Flowers" width="400" height="300"></a>
+          <p><strong>Floral Scents</strong></p>
+         
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="#store"><img src="img/elegant.jpg" alt="Perfume Bottle" width="400" height="300"></a>
+          <p><strong>Elegant Scents</strong></p>
+          
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="#store"><img src="img/nature.jpg" alt="Trees in fog" width="400" height="300"></a>
+          <p><strong>Nature Scents</strong></p>
+		  
+		  </div>
+		  </div>
+		  </div>
+            
+      
+    
+  </div>
+  </div>
+  <!-- Container (Store Section) -->
+<div id="store" class="bg-2">
+  <div class="container">
+    <h3 class="text-center">STORE</h3>
+    <h2 class="text-center">Below you can find our current candle selection. The candles are available in large, medium, and DayLight candles, as well as wax melts for a flameless option, this collection captures the essence of holiday cheer for every home.</h2>
+    </div>
+    <div class="container">
+     <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/frosty.jpg" alt="Frosty Mountains" width="400" height="300">
+          <p><strong>Frosty Season</strong></p>
+          <p>A unique, fresh sensory experience for winter weekends! A warm and fresh-as-snow-scent. This scent will get you through the coldest season!</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/spruce.jpg" alt="Snow-covered spruce" width="400" height="300">
+          <p><strong>Snowy Spruce</strong></p>
+          <p>Cool, aromatic notes of crisp greens and snow-capped spruce embrace warm notes of amber and earthy woods, creating a unique contrast.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/cocoa.jpg" alt="Candy Cane Cocoa" width="400" height="300">
+          <p><strong>Candy Cane Cocoa</strong></p>
+          <p>Enjoy the cocoa cream and vanilla accompanied by fresh crushed peppermint and chocolate minted woods.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+	  <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/pumpkinspice.jpg" alt="Pumpkin Spice Coffee" width="400" height="300">
+          <p><strong>Pumpkin Spice Coffee</strong></p>
+          <p>Pumpkin Spice Coffee is the essence of cozy fall mornings, where warm nutmeg and cinnamon blend seamlessly with spicy clove.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/autumnleaves.jpg" alt="Leaves in autumn" width="400" height="300">
+          <p><strong>Autumn Leaves</strong></p>
+          <p>Woodsy notes mingle with the sweet and tart apple accords. Hints of patchouli and crisp air merge to capture the essence of autumn.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/blueberrypie.jpg" alt="Blueberry Pie" width="400" height="300">
+          <p><strong>Blueberry Pie</strong></p>
+          <p>Baked blueberries yield a luscious, fruity scent totally different from the fresh fruit. It’s matched perfectly with a warm cake notes.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+	  <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/cherryblossom.jpg" alt="Cherry Blossom" width="400" height="300">
+          <p><strong>Cherry Blossom</strong></p>
+          <p>Cherry Blossom is a lively and authentic botanical fragrance, celebrating the renewal of spring with a promise of luscious tart/sweet fruits to come.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/lavender.jpg" alt="Lavender bouquet" width="400" height="300">
+          <p><strong>Lavender</strong></p>
+          <p>Discover the idyll of Provence’s purple meadows in our calming French Lavender, to help take you away from the stresses of the day.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/armani.jpg" alt="Man with perfume" width="400" height="300">
+          <p><strong>Bossy Armani</strong></p>
+          <p>Red cedar and vanilla musk combined with invigorating citrus over amber and soft touches of dark sandalwood is an exquisite choice for men.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+	  <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/waterfall.jpg" alt="Waterfall in cave" width="400" height="300">
+          <p><strong>Forbidden Paradise</strong></p>
+          <p>Indulge in this floral fruit medley as water orchid, green coconut, kiwi blossom and Tahitian vanilla combine with accents of pineapple and amber.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/incense.jpg" alt="Incense and candles" width="400" height="300">
+          <p><strong>Incense and Myrrh</strong></p>
+          <p>A deep, aromatic blend of myrrh from Namibia, sweet woods, aromatic incense and a touch of orange will get your meditate state.</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/chanel.jpg" alt="Woman with perfume" width="400" height="300">
+          <p><strong>Coco Chanel</strong></p>
+          <p>Be like Coco Chanel. Wrap yourself with a beautiful mix of bright citrus, sweet florals and spicy vanilla notes. Enjoy the elegance!</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Buy the candle</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Price 35€</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact us</h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Contact us in case of any enquiries or offers.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Laurinkatu 4, Helsinki, Finland</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +358 56565664</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: info@candleworld.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+	
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Follow us on social media:
+  <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+<a href="https://www.x.com"><i class="fab fa-twitter"></i></a>
+<a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></p>
+  <p>Candle World ©Copyright 2024</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
